@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: es.ull.flights.FlightTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in es.ull.flights.FlightTest
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.037 s <<< FAILURE! - in es.ull.flights.FlightTest
+testGetNumberOfPassengers  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.RuntimeException: Invalid flight number
+	at es.ull.flights.FlightTest.setUp(FlightTest.java:21)
+
+testGetFlightNumber  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Invalid flight number
+	at es.ull.flights.FlightTest.setUp(FlightTest.java:21)
+
+testAddPassenger  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.RuntimeException: Invalid flight number
+	at es.ull.flights.FlightTest.setUp(FlightTest.java:21)
+
+testRemovePassenger  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: Invalid flight number
+	at es.ull.flights.FlightTest.setUp(FlightTest.java:21)
+
