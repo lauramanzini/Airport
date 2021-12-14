@@ -54,7 +54,4 @@ public class PassengerTest {
                 () -> assertThrows(RuntimeException.class, () -> passenger.joinFlight(emptyFlight), "We cannot join a flight")
         );
     }
-
-
-
 }
