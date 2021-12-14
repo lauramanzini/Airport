@@ -12,27 +12,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DisplayName("Flight Test")
 public class FlightTest {
 
-    private Flight Paris, Milan, London;
-    private Passenger Maria, Cleo, Luca;
-
+    private Flight flight;
+    private Passenger passenger;
 
     @BeforeEach
     void setUp(){
-        Paris = new Flight("LU123X", 20);
-        Milan = new Flight ("PC568L", 13);
-        London = new Flight("ML468N", 2);
-        Maria = new Passenger("identifier1", "Maria", "ESP");
-        Cleo = new Passenger ("identifier2", "Cleo", "FRA");
-        Luca = new Passenger ("identifier3", "Luca", "ITA");
+        flight = new Flight("FR4849", 20);
+        passenger = new Passenger ("id1", "Francesco", "IT");
     }
 
     @Test
     @DisplayName("Add Passenger Test")
     void testAddPassenger() {
-        assertAll(
-                () -> assertTrue(Paris.addPassenger(Maria), "Passenger was able to book the flight"),
-                () -> assertThrows(RuntimeException.class, ()-> Paris.addPassenger(Maria), "Passenger was not able to book the flight")
-                );
+
     }
 
     @Test
@@ -44,12 +36,10 @@ public class FlightTest {
     @Test
     @DisplayName("Get Number Of Passengers")
     void testGetNumberOfPassengers() {
-
     }
 
     @Test
     @DisplayName("Remove Passenger Test")
     void testRemovePassenger() {
-
     }
 }
